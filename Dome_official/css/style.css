@@ -1,0 +1,258 @@
+*{
+padding: 0;
+margin: 0;
+bottom: 0;
+font-family: 'Dancing Script', 'cursive';
+
+}
+
+/* la partie main  */
+
+
+
+main{
+    background-color: rgba(0, 0, 0, 0.459);
+    padding:30px;
+    display: grid;
+    grid-template-columns: 70% 30% ;
+    grid-template-rows: 100px auto  ;
+    grid-template-areas: 
+    "header header"
+    "article aside";
+    gap:20px 20px;
+    
+    
+}
+
+main header{grid-area: header;}
+main article{grid-area: article;}
+main aside{grid-area: aside;}
+
+
+/* l'Entete de main */
+
+main header{
+    text-align: center;
+    background-color: #488d71;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    box-shadow:  0px 10px 16px 0px rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+
+}
+
+
+/* article section */
+
+
+article .art{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow:  0px 10px 16px 0px rgba(0, 0, 0, 0.205);
+    border-radius: 10px;
+    margin-left:15px;
+}
+
+
+.article{
+    margin: 60px 0;
+    height: 300px;
+    background-color: rgba(78, 82, 78, 0.473);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+  
+}
+
+.article:hover{
+    background-color: #488d71;
+    transform: translateY(-5px);
+
+}
+
+
+/* div avec la class  DETAIL  = la partie class description et class  valeur des articles */
+
+.detail{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 20px;
+    padding: 0 30px;
+   
+}
+
+
+/* description */
+
+.description{
+    display: block;
+   
+
+}
+
+
+.description p{
+    font-size: 20px;
+    margin-top: 25px;
+    
+}
+
+.color1{
+    color: violet;
+    font-weight: bold;
+}
+.color2{
+    color: black;
+    font-weight: bold;
+}
+.color3{
+    color: white;
+    font-weight: bold;
+}
+
+.prix{
+font-weight: bold;
+color: red;
+font-size: 22px;
+
+}
+
+/* valeur   icone */
+
+
+.valeur{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+    height: 200px;
+    width: auto;
+    padding: 10px;
+    
+}
+
+
+.valeur img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    
+}
+
+#supp1,#supp2,#supp3{
+    background-color: red;
+  
+}
+
+
+/* UNITE   la partie contenant les trois bouton et la somme */
+ 
+
+.iconbtn {
+    
+    margin-right: 10px;
+    padding: 10px ;
+    font-size: 12px;
+     text-transform: uppercase;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    outline: none;
+  }
+  
+  .iconbtn:hover {
+    background-color: #112e2262;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.192);
+    border: none;
+  }
+  
+  .iconbtn:active {
+    transform: translateY(-3px);
+  }
+
+
+
+
+
+/* BOUTON LIKE */
+
+
+.lovebouton{
+    background-color: rgba(240, 248, 255, 0);
+    border: none;
+    
+   
+}
+
+.lovebouton:active{
+    transform: translateY(-3px);
+    border: none;
+}
+
+
+#love1,#love2,#love3 {
+    font-size: 30px;
+    color: white;
+    border: none;
+}
+
+
+.unite p {
+    font-size:20px ;
+    font-weight:bold ;
+   
+}
+
+/* la section aside  */
+
+aside{
+    padding: 50px 0;
+    height: 400px;
+    margin-top: 60px;
+    text-align: center;
+    background-color: #488d71;
+    box-shadow:  0px 10px 16px 0px rgba(0,0,0,.3);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+aside:hover{
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(12, 19, 16, 0.308);
+    /* color: #fff; */
+    border: none;
+}
+aside p{
+    font-size: 30px;
+    margin-top: 20px;
+    display: block;
+    background-color: #fffffff5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* footer pied de page  */
+
+.pied{
+    background-color: #488d71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 10px;
+    height: 50px;
+    font-weight: bold;
+    bottom: 0;
+    
+}
